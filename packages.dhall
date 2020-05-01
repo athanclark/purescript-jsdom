@@ -123,6 +123,12 @@ let upstream =
 
 let overrides = {=}
 
-let additions = {=}
+let additions =
+{ row-extra =
+    { dependencies = [] : List Text
+    , repo = "https://github.com/athanclark/purescript-row-extra.git"
+    , version = "v0.0.1"
+    }
+}
 
 in  upstream // overrides // additions

@@ -7,10 +7,12 @@ module JSDOM
   ) where
 
 import Prelude
+import Data.MediaType (MediaType)
 import Effect (Effect)
 import Effect.Uncurried (EffectFn1, EffectFn2, runEffectFn1, runEffectFn2)
 import Row.Class (class SubRow)
 import Web.HTML (Window)
+import Unsafe.Coerce (unsafeCoerce)
 
 
 
